@@ -21,6 +21,9 @@
 html{
     scroll-behavior: smooth;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 
 .events{
     display: flex;

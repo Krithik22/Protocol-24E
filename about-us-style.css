@@ -32,6 +32,9 @@ body{
     background-color: black;
     color: white;
 }
+body::-webkit-scrollbar{
+    display: none;
+}
 
 a{
     cursor: pointer;
@@ -48,88 +51,6 @@ button{
     /* background-attachment: fixed; */
 }
 
-
-
-.nav-desk{
-    padding: 2rem 0 0 2rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-desk > section{
-    padding: 0 0 0 4.5rem;
-}
-
-.navlink{
-    margin: 0 1.6rem 0 0;
-}
-
-.navbtn{
-    font-family: 'Space Grotesk', sans-serif;
-    background-color: transparent;
-    border: transparent;
-    font-size: 17px;
-    padding: 10px;
-}
-
-.navbtn-cur{
-    font-family: 'Space Grotesk', sans-serif;
-    background-color: transparent;
-    position: relative;
-    border: transparent;
-    font-size: 17px;
-}
-
-.navbtn-cur::before {
-    background: white;
-    width: 3px;
-    height: 3px;
-    content: " ";
-    position: absolute;
-    top:25px;
-    left: 50%;
-    margin-left:-2.5px;
-    display: inline-block;
-    border-radius: 60%;
-  }
-
-.ham-btn{
-    display: none;
-    margin: 0 2.5rem 0 0;
-    padding: 0 5px 0 5px;
-    background: transparent;
-    border: transparent;
-}
-
-.menu{
-    display: none;
-}
-
-
-.cross-btn{
-    background: transparent;
-    border: transparent;
-    float: right;
-    margin: 1.6rem;
-}
-
-.nav-mobile{
-    margin-left: 1rem;
-}
-
-.nav-mobile-btn{
-    font-size: large;
-    color: rgba(255, 255, 255, 0.521);
-    text-decoration: none;
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-.nav-mobile-active{
-    font-size: large;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-family: 'Space Grotesk', sans-serif;
-}
 
 .about-us-head{
     display: flex;
@@ -187,12 +108,6 @@ button{
     line-height: 18px;
 }
 
-/* #watermark{
-    position: absolute;
-    width: 100vw;
-    height: 50%;
-} */
-
 .meet-team-btn{
     border-radius: 2.97px;
     border: white solid 1px;
@@ -211,33 +126,6 @@ button{
         height: 100vh;
         background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0));
     }
-
-    nav{
-        padding: 2rem 0 0 1.5rem;
-
-    }
-    nav > section{
-        display: none;
-    }
-
-
-    .ham-btn{
-        display: block;
-    }
-
-    .menu{
-        display: block;
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0.2s, opacity 0.2s ease-out;
-        float: right;
-        background-color: black;
-        width: 70%;
-        position:absolute;
-        height: 100%;
-        z-index: 1;
-    }
-
     #about-us-head{
         font-size: 56px;
     }
