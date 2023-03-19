@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../Logos/AIT logo B⁄W.png">
+    <title>Events - Alien Choices</title>
+</head>
+<body>
+    <div style="display: flex; justify-content: right;">
+        <div class="menu" id="menu">
+            <button class="cross-btn" onclick="closemenu();"><img src="../Logos/Cross.svg" alt=""></button>
+            <nav class="nav-mobile">
+                <br><br><br><br><br>
+                <a href="home.html" class="nav-mobile-btn">Home</a><br><br><br>
+                <a href="about-us.html" class="nav-mobile-btn">About</a><br><br><br>
+                <a href="#" class="nav-mobile-active">Events</a><br><br><br>
+                <a href="./location page.html" class="nav-mobile-btn">Location</a><br><br><br>
+                <a href="#" class="nav-mobile-btn">Contact</a><br><br><br>
+            </nav>
+        </div>
+    </div>
+    <div class="main">
+        <nav class="nav-desk">
+            <img src="../Logos/SVCE logo B_W.png" alt="" width="200px">
+            <section>
+                <a class="navlink" href="../home.html"><button class="navbtn">Home</button></a>
+                <a class="navlink" href="../about-us.html"><button class="navbtn">About</button></a>
+                <a class="navlink" href="../events.html"><button class="navbtn-cur">Events</button></a>
+                <a class="navlink" href="./location page.html"><button class="navbtn">Location</button></a>
+                <a class="navlink" href=""  style="margin-right: 4.5rem;"><button class="navbtn">Contact</button></a>
+            </section>
+                <button class="ham-btn" onclick="openmenu();"><img src="../Logos/hamburger.svg" alt=""></button>
+        </nav>
+        <section class="event-details">
+            <h1 class="event-head">Alien Choices - A DSA Quiz</h1>
+            <div class="event">
+                <img src="../Images/events/event 6.jpg" alt="" class="event-img">
+                <div class="event-desc">
+                    <h1>Description:</h1>
+                    <p>The participants will have to attend an MCQ for the 1st round where they will be given questions based on DSA.
+                    Those who qualify for the second round have to take up DSA based coding round of varying difficulty levels. 
+                    Participants with the highest scores at the end of the event will be announced as winners.</p>
+                    <br>
+                    <h2>Rules</h2>
+                    <ol>
+                        <li>Team-size: minimum 1 member.</li>
+                        <li>Over writing the answers should be avoided.</li>
+                        <li>Mobiles not allowed.</li>
+                        <li>The participants are required to have basic knowledge in programming.</li>
+                        <li>The event consists of multiple levels. Each level may further consist of subtasks.</li>
+                        <li>All the programming languages like C, C++, Java, Python, etc are allowed.</li>
+                        <li>Participants must have a HackerRank account before the commencement of the event.</li>
+                        <li>Your score will increase as you progress through the tasks.</li>
+                        <li>The faster you complete the level, the higher you will be on the leaderboard.</li>
+                        <li>Discussion among participants is not encouraged.</li>
+                    </ol>
+                </div>
+            </div>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSepd1avg9Qw6YIy6GeMuxJvZ2YemJQBcqYd7gMQihJpvW4P5g/viewform" style="text-decoration: none; text-align: center">
+                <button class="register-btn">
+                    Register
+                    <img
+                      src="../Logos/Arrow.svg"
+                      alt=""
+                      width="15"
+                      style="position: relative; top: 4px; left: 5px"
+                    />
+                </button>
+            </a>
+        </section>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

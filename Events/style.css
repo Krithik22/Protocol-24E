@@ -1,0 +1,229 @@
+@font-face {
+    font-family: Mars;
+    src: url(./Fonts/Mars.ttf);
+}
+
+@font-face {
+    font-family: 'Mars Bold';
+    src: url(./Fonts/Mars\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Mars Thin';
+    src: url(./Fonts/Mars\ Thin.ttf);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+body{
+    /* background: url(../Images/Star\ BG\ in\ UI.png) no-repeat center center / cover,url(../Images/Star\ BG\ in\ UI.png) no-repeat center center / cover,url(../Images/Main\ BG.png) no-repeat center center / cover,url(../Images/Main\ BG.png) no-repeat center center / cover,url(../Images/Main\ BG.png) no-repeat center center / cover,url(../Images/Main\ BG.png) no-repeat center center / cover, url(../Images/flare.png) no-repeat center,url(../Images/Nebula\ GIF.gif) no-repeat center center / cover, radial-gradient(rgba(0, 0, 0, 0.199),rgba(0, 0, 0, 0.226)); */
+    background: url(../Images/dark-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    height:100vh;
+    background-color: black;
+    color: white;
+}
+
+
+.main{
+    height: 100vh;
+    /* background-image: radial-gradient(rgba(0, 0, 0, 0.199),rgba(0, 0, 0, 0.226)); */
+}
+
+
+.nav-desk{
+    padding: 2rem 0 0 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-desk > section{
+    padding: 0 0 0 4.5rem;
+}
+
+.navlink{
+    margin: 0 1.6rem 0 0;
+}
+
+.navbtn{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: transparent;
+    border: transparent;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.navbtn-cur{
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: transparent;
+    position: relative;
+    border: transparent;
+    font-size: 17px;
+}
+
+.navbtn-cur::before {
+    background: white;
+    width: 3px;
+    height: 3px;
+    content: " ";
+    position: absolute;
+    top:25px;
+    left: 50%;
+    margin-left:-2.5px;
+    display: inline-block;
+    border-radius: 60%;
+  }
+
+  
+.ham-btn{
+    display: none;
+    margin: 0 2.5rem 0 0;
+    padding: 0 5px 0 5px;
+    background: transparent;
+    border: transparent;
+}
+
+
+.menu{
+    display: none;
+}
+
+
+.cross-btn{
+    background: transparent;
+    border: transparent;
+    float: right;
+    margin: 1.6rem;
+}
+
+.nav-mobile{
+    margin-left: 1rem;
+}
+
+.nav-mobile-btn{
+    font-size: large;
+    color: rgba(255, 255, 255, 0.521);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.nav-mobile-active{
+    font-size: large;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.event-details{
+    margin: 30px 30px 100px;
+    letter-spacing: 0.1em;
+}
+
+.event-head{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 91px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.event img{
+    height: 350px;
+    width: 350px;
+}
+
+.event{
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+}
+
+.event-desc{
+    margin-left: 20px;
+}
+.event-desc ol{
+    margin-left: 25px;
+}
+
+.register-btn{
+    border-radius: 2.97px;
+    border: white solid 1px;
+    color: black;
+    padding: 12px 20px 12px 20px;
+    font-family:'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 887px) {
+    .main{
+        height: 100vh;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0));
+    }
+
+    nav{
+        padding: 2rem 0 0 1.5rem;
+
+    }
+    nav > section{
+        display: none;
+    }
+
+    .ham-btn{
+        display: block;
+    }
+
+    .menu{
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.2s, opacity 0.2s ease-out;
+        float: right;
+        background-color: black;
+        width: 70%;
+        position:absolute;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .event-head{
+        font-size: 24px;
+    }
+
+    .event img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .event{
+        flex-direction: column;
+    }
+
+    .event-desc{
+        margin: 30px 0;
+    }
+
+}
