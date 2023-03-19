@@ -37,7 +37,11 @@
     min-width: 350px;
     margin: 20px 10px;
     border-radius: 5px;
+}
+
+.event-box a{
     cursor: pointer;
+    text-decoration: none;
 }
 
 

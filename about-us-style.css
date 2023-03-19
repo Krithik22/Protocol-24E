@@ -27,12 +27,19 @@
 
 body{
     background: url(./Images/Star\ BG\ in\ UI.png) no-repeat center center / cover,url(./Images/Star\ BG\ in\ UI.png) no-repeat center center / cover,url(./Images/Main\ BG.png) no-repeat center center / cover,url(./Images/Main\ BG.png) no-repeat center center / cover,url(./Images/Main\ BG.png) no-repeat center center / cover,url(./Images/Main\ BG.png) no-repeat center center / cover, url(./Images/flare.png) no-repeat center,url(./Images/Nebula\ GIF.gif) no-repeat center center / cover, radial-gradient(rgba(0, 0, 0, 0.199),rgba(0, 0, 0, 0.226));
-    background-repeat: no-repeat;
-    background-size:center cover;
     background-attachment: fixed;
     height:100vh;
     background-color: black;
     color: white;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
 }
 
 .main{
@@ -40,6 +47,7 @@ body{
     /* background-image: radial-gradient(rgba(0, 0, 0, 0.199),rgba(0, 0, 0, 0.226)); */
     /* background-attachment: fixed; */
 }
+
 
 
 .nav-desk{
