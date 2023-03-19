@@ -7,7 +7,7 @@ body{
     background-size: cover;
     background-color: #121212;
 }
-
+ 
 a{
     text-decoration: none;
 }
@@ -23,71 +23,35 @@ a{
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0));
 }
 
-
-.nav-desk{
-    padding: 2rem 0 2rem 2rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-desk > section{
-    padding: 0 0 0 4.5rem;
-}
-
-.navlink{
-    margin: 0 1.6rem 0 0;
-}
-
-.navbtn{
-    font-family: 'Space Grotesk', sans-serif;
-    background-color: transparent;
-    border: transparent;
-    font-size: 17px;
-    padding: 10px;
-}
-
-.navbtn-cur{
-    font-family: 'Space Grotesk', sans-serif;
-    background-color: transparent;
-    position: relative;
-    border: transparent;
-    font-size: 17px;
-}
-
-.navbtn-cur::before {
-    background: white;
-    width: 3px;
-    height: 3px;
-    content: " ";
-    position: absolute;
-    top:25px;
-    left: 50%;
-    margin-left:-2.5px;
-    display: inline-block;
-    border-radius: 60%;
-  }
-
 .location-section{
-    margin: 10rem 0 0 0;
+    margin: 30px 20px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
 .map{
-    border-radius:10px ;
+    border:0;
+    border-radius:10px;
+    width: 350px; 
+    height: 320px;
 }
 
-.lap-text-section{
-    margin: 6rem 0rem 0 0;
-    width: 27rem;
+.location-address{
+    margin-left: 72px;
+    width: 490px;
     text-align: left; 
 }
 
-.mob-text-section{
-    display: none;
-    margin: 3.5rem 0rem 0 0;
-    width: 27rem;
-    text-align: left; 
+.location-address h1{
+    font-size: 0.7cm; 
+    font-family: 'Space Grotesk'; 
+    font-weight: 200;
+}
+.location-address p{
+    margin-top: 2rem; 
+    font-family: 'Space Grotesk'; 
+    opacity: 0.6;
 }
 
 
@@ -106,43 +70,6 @@ a{
     padding: 12px 40px 12px 40px;
     margin: 4rem 0 4rem 0 ;
     font-family:'Space Grotesk';
-}
-
-.ham-btn{
-    display: none;
-    margin: 0 2.5rem 0 0;
-    padding: 0 5px 0 5px;
-    background: transparent;
-    border: transparent;
-}
-
-.menu{
-    display: none;
-}
-
-.cross-btn{
-    background: transparent;
-    border: transparent;
-    float: right;
-    margin: 1.6rem;
-}
-
-.nav-mobile{
-    margin-left: 1rem;
-}
-
-.nav-mobile-btn{
-    font-size: large;
-    color: rgba(255, 255, 255, 0.521);
-    text-decoration: none;
-    font-family: 'Space Grotesk', sans-serif;
-}
-
-.nav-mobile-active{
-    font-size: large;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-family: 'Space Grotesk', sans-serif;
 }
 
 footer{
@@ -187,7 +114,7 @@ footer{
 
     .foot-div{
         display: block;
-        /* padding: 0 0 0 0; */
+        padding: 0px 30px;
     }
 
     .foot-text{
@@ -208,9 +135,6 @@ footer{
         margin-right: 1rem;
     }
 
-    /* .footer-svce-logo{
-        padding: 0 0 0 0;
-    } */
 }
 
 
@@ -220,50 +144,16 @@ footer{
         /* height: min-content; */
     }
 
-    .nav-desk{
-        margin-bottom: 0rem;
-    }
-    nav{
-        padding: 2rem 0 0 1.5rem;
-    }
-    nav > section{
-        display: none;
-    }
-
-    .ham-btn{
-        display: block;
-    }
-
-    .menu{
-        display: block;
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0.2s, opacity 0.2s ease-out;
-        float: right;
-        background-color: black;
-        width: 70%;
-        position:absolute;
-        height: 100%;
-        z-index: 1;
-    }
-
     .location-text{
         margin-top: 0rem;
         padding-top: 0rem ;
     }
     .location-section{
-        margin: 1.5rem 0 0px 0;
-        display: block;
+        flex-direction: column-reverse;
     }
-
-    .lap-text-section{
-        display: none;
-    }
-
-    .mob-text-section{
-        display: block;
-        width: 17rem;
-        margin: 0 0 3rem 0rem;
+    .location-address{
+        width: fit-content;
+        margin-bottom: 30px;
     }
 
     .busbtn{
@@ -275,6 +165,12 @@ footer{
         padding: 0 0 0 0;
     }
 
+    .foot-div{
+        padding: 0px 500px;
+    }
+    .text-social-section p{
+        margin-top: 10px;
+    }
     .twitter,.facebook{
         display: none;
     }
@@ -319,6 +215,11 @@ footer{
     .map{
         width: 280px;
     }
+    .location-address{
+        margin: 10px 0px 20px;
+        width: 280px;
+    }
+
     .social-media{
         margin-right: 0px;
     }

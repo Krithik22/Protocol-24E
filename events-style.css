@@ -18,10 +18,15 @@
     src: url(./Fonts/Mars\ Thin.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .events{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1300px;
     margin: 50px 0;
 }
 
