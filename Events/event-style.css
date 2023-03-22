@@ -1,0 +1,108 @@
+@font-face {
+    font-family: Mars;
+    src: url(../Fonts/Mars.ttf);
+}
+
+@font-face {
+    font-family: 'Mars Bold';
+    src: url(../Fonts/Mars\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Mars Thin';
+    src: url(../Fonts/Mars\ Thin.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
+body{
+    background: url(../Images/dark-bg.jpeg) no-repeat, url(../Images/flare.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.event-page{
+    min-height: 100vh;
+    margin: 40px 0 20px;
+}
+.event-head{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 61px;
+    text-align: center;
+}
+.event-details{
+    margin: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.event-details img{
+    height: 350px;
+    width: 350px;
+}
+.event-desc h2{
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    color: #FFFFFF;
+    margin: 5px 0;
+}
+.event-desc p{
+    line-height: 20px;
+    color: #bdbdbd;
+}
+
+.event-desc ul > li{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: justify;
+    color: #bdbdbd;
+    margin: 0 16px 10px;
+}
+
+.register-btn{
+    border-radius: 2.97px;
+    border: white solid 1px;
+    color: black;
+    padding: 12px 20px 12px 20px;
+    font-family:'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 940px) {
+    .event-details img{
+        width: 800px;
+        height: 500px;
+    }
+    .event-details{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 20px 56px;
+    }
+    .event-desc{
+        margin-right: 32px;
+    }
+    .register-btn{
+        left: unset;
+        transform: translateX(0);
+    }
+}

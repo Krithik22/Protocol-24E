@@ -4,163 +4,108 @@
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="events-style.css">
-    <link rel="stylesheet" href="home-style.css">
-    <link rel="stylesheet" href="location-style.css">
+    <link rel="stylesheet" href="nav-bar-style.css">
+    <link rel="stylesheet" href="event-style.css">
     <link rel="icon" href="./Logos/AIT logo B⁄W.png">
     <title>PROTOCOL</title>
 </head>
 <body>
-    <div style="display: flex; justify-content: right;">
+    <nav class="nav-mobile">
         <div class="menu" id="menu">
             <button class="cross-btn" onclick="closemenu();"><img src="./Logos/Cross.svg" alt=""></button>
-            <nav class="nav-mobile">
+            <div class="nav-mobile-links">
                 <br><br><br><br><br>
-                <a href="index.html" class="nav-mobile-btn">Home</a><br><br><br>
-                <a href="about-us.html" class="nav-mobile-btn">About</a><br><br><br>
-                <a href="events.html" class="nav-mobile-active">Events</a><br><br><br>
-                <a href="#location-sec" class="nav-mobile-btn">Location</a><br><br><br>
+                <a href="index.html#nav-to-home" class="nav-mobile-active">Home</a><br><br><br>
+                <a href="index.html#nav-to-about-us" class="nav-mobile-btn">About</a><br><br><br>
+                <a href="events.html" class="nav-mobile-btn">Events</a><br><br><br>
+                <a href="index.html#nav-to-location" class="nav-mobile-btn">Location</a><br><br><br>
                 <a href="#" class="nav-mobile-btn">Contact</a><br><br><br>
-            </nav>
+            </div>
         </div>
+    </nav>
+    <div class="nav-mob">
+        <img src="./Logos/SVCE logo B_W.png" alt="">
+        <button class="ham-btn" onclick="openmenu();"><img src="./Logos/hamburger.svg" alt=""></button>
     </div>
-    <div class="main">
+    <div class="events-main">
         <nav class="nav-desk">
             <img src="./Logos/SVCE logo B_W.png" alt="" width="200px">
-            <section>
-                <a class="navlink" href="index.html"><button class="navbtn">Home</button></a>
-                <a class="navlink" href="about-us.html"><button class="navbtn">About</button></a>
-                <a class="navlink" href="events.html"><button class="navbtn-cur">Events</button></a>
-                <a class="navlink" href="#location-sec"><button class="navbtn">Location</button></a>
-                <a class="navlink" href=""  style="margin-right: 4.5rem;"><button class="navbtn">Contact</button></a>
-            </section>
-                <button class="ham-btn" onclick="openmenu();"><img src="./Logos/hamburger.svg" alt=""></button>
-        </nav>
-        <section class="events-section">
-            <div class="event-head">
-                <img src="Images/Explore.svg" alt="">
-                <div class="star">
-                    <svg width="37" height="43" viewBox="0 0 37 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.5722 4.35515C20.548 10.5262 12.6543 22.1707 5.2725 19.3804" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round"/>
-                        <path d="M11.0425 37.501C13.6953 32.5696 21.1059 23.5025 29.5257 26.6852" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round"/>
-                        <path d="M23.6401 4.17409C22.0938 10.3517 21.106 23.5027 29.5258 26.6853" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round"/>
-                        <path d="M11.0424 37.5011C12.1946 32.6236 12.6536 22.1708 5.2718 19.3805" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round"/>
-                    </svg>
-                </div>
+            <div>
+                <a class="navbtn" href="index.html#nav-to-home">Home</a>
+                <a class="navbtn" href="index.html#nav-to-about-us">About</a>
+                <a class="navbtn" href="events.html">Events</a>
+                <a class="navbtn" href="index.html#nav-to-location">Location</a>
+                <a class="navbtn" href="">Contact</a>  <!--  style="margin-right: 4.5rem;"-->
             </div>
-            <div class="events">
-                <div class="event-box e1">
-                    <a href="Events/zathura.html">
-                        Zathura 
-                        <svg width="14" height="18" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.292893 12.7929C-0.0976311 13.1834 -0.0976311 13.8166 0.292893 14.2071C0.683418 14.5976 1.31658 14.5976 1.70711 14.2071L0.292893 12.7929ZM14 1.5C14 0.947714 13.5523 0.499999 13 0.499999L4 0.5C3.44772 0.499999 3 0.947715 3 1.5C3 2.05228 3.44772 2.5 4 2.5L12 2.5L12 10.5C12 11.0523 12.4477 11.5 13 11.5C13.5523 11.5 14 11.0523 14 10.5L14 1.5ZM1.70711 14.2071L13.7071 2.20711L12.2929 0.792893L0.292893 12.7929L1.70711 14.2071Z" fill="white"/>
-                        </svg>                        
-                    </a>
-                </div>
-                <div class="event-box e2">
-                    <a href="Events/voidx.html">
-                        Void X 
+        </nav>
+        <section class="events">
+            <div class="event-box">
+                <a href="events/zathura.html">
+                    <img src="images/events/event 1.png" alt="">
+                    <h3 class="event-title">
+                        Zathura
                         <svg width="14" height="18" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.292893 12.7929C-0.0976311 13.1834 -0.0976311 13.8166 0.292893 14.2071C0.683418 14.5976 1.31658 14.5976 1.70711 14.2071L0.292893 12.7929ZM14 1.5C14 0.947714 13.5523 0.499999 13 0.499999L4 0.5C3.44772 0.499999 3 0.947715 3 1.5C3 2.05228 3.44772 2.5 4 2.5L12 2.5L12 10.5C12 11.0523 12.4477 11.5 13 11.5C13.5523 11.5 14 11.0523 14 10.5L14 1.5ZM1.70711 14.2071L13.7071 2.20711L12.2929 0.792893L0.292893 12.7929L1.70711 14.2071Z" fill="white"/>
                         </svg>
-                    </a>
-                </div>
-                <div class="event-box e3">
-                    <a href="Events/binary-star.html">
+                    </h3>
+                </a>
+            </div>
+            <div class="event-box">
+                <a href="events/voidx.html">
+                    <img src="images/events/event 2.png" alt="">
+                    <h3 class="event-title">
+                        VoidX
+                        <svg width="14" height="18" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.292893 12.7929C-0.0976311 13.1834 -0.0976311 13.8166 0.292893 14.2071C0.683418 14.5976 1.31658 14.5976 1.70711 14.2071L0.292893 12.7929ZM14 1.5C14 0.947714 13.5523 0.499999 13 0.499999L4 0.5C3.44772 0.499999 3 0.947715 3 1.5C3 2.05228 3.44772 2.5 4 2.5L12 2.5L12 10.5C12 11.0523 12.4477 11.5 13 11.5C13.5523 11.5 14 11.0523 14 10.5L14 1.5ZM1.70711 14.2071L13.7071 2.20711L12.2929 0.792893L0.292893 12.7929L1.70711 14.2071Z" fill="white"/>
+                        </svg>
+                    </h3>
+                </a>
+            </div>
+            <div class="event-box">
+                <a href="events/binary-star.html">
+                    <img src="images/events/event 3.png" alt="">
+                    <h3 class="event-title">
                         Binary Star
                         <svg width="14" height="18" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.292893 12.7929C-0.0976311 13.1834 -0.0976311 13.8166 0.292893 14.2071C0.683418 14.5976 1.31658 14.5976 1.70711 14.2071L0.292893 12.7929ZM14 1.5C14 0.947714 13.5523 0.499999 13 0.499999L4 0.5C3.44772 0.499999 3 0.947715 3 1.5C3 2.05228 3.44772 2.5 4 2.5L12 2.5L12 10.5C12 11.0523 12.4477 11.5 13 11.5C13.5523 11.5 14 11.0523 14 10.5L14 1.5ZM1.70711 14.2071L13.7071 2.20711L12.2929 0.792893L0.292893 12.7929L1.70711 14.2071Z" fill="white"/>
                         </svg>
-                    </a>
-                </div>
-                <div class="event-box e4">
-                    <a href="Events/space-trade.html">
+                    </h3>
+                </a>
+            </div>
+            <div class="event-box">
+                <a href="events/space-trade.html">
+                    <img src="images/events/event 4.png" alt="">
+                    <h3 class="event-title">
                         Space Trade
-                        <svg width="15" height="18" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg width="14" height="18" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.292893 12.7929C-0.0976311 13.1834 -0.0976311 13.8166 0.292893 14.2071C0.683418 14.5976 1.31658 14.5976 1.70711 14.2071L0.292893 12.7929ZM14 1.5C14 0.947714 13.5523 0.499999 13 0.499999L4 0.5C3.44772 0.499999 3 0.947715 3 1.5C3 2.05228 3.44772 2.5 4 2.5L12 2.5L12 10.5C12 11.0523 12.4477 11.5 13 11.5C13.5523 11.5 14 11.0523 14 10.5L14 1.5ZM1.70711 14.2071L13.7071 2.20711L12.2929 0.792893L0.292893 12.7929L1.70711 14.2071Z" fill="white"/>
                         </svg>
-                    </a>
-                </div>
-                <div class="event-box e5">
-                    <a href="Events/pitching-stone.html">
+                    </h3>
+                </a>
+            </div>
+            <div class="event-box">
+                <a href="events/pitching-stone.html">
+                    <img src="images/events/event 5.png" alt="">
+                    <h3 class="event-title">
                         Pitching Stone
                         <svg width="14" height="18" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.292893 12.7929C-0.0976311 13.1834 -0.0976311 13.8166 0.292893 14.2071C0.683418 14.5976 1.31658 14.5976 1.70711 14.2071L0.292893 12.7929ZM14 1.5C14 0.947714 13.5523 0.499999 13 0.499999L4 0.5C3.44772 0.499999 3 0.947715 3 1.5C3 2.05228 3.44772 2.5 4 2.5L12 2.5L12 10.5C12 11.0523 12.4477 11.5 13 11.5C13.5523 11.5 14 11.0523 14 10.5L14 1.5ZM1.70711 14.2071L13.7071 2.20711L12.2929 0.792893L0.292893 12.7929L1.70711 14.2071Z" fill="white"/>
-                        </svg>                    
-                    </a>
-                </div>
-                <div class="event-box e6">
-                    <a href="Events/alien-choices.html">
+                        </svg>
+                    </h3>
+                </a>
+            </div>
+            <div class="event-box">
+                <a href="events/alien-choices.html">
+                    <img src="images/events/event 6.jpg" alt="">
+                    <h3 class="event-title">
                         Alien Choices
                         <svg width="14" height="18" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0.292893 12.7929C-0.0976311 13.1834 -0.0976311 13.8166 0.292893 14.2071C0.683418 14.5976 1.31658 14.5976 1.70711 14.2071L0.292893 12.7929ZM14 1.5C14 0.947714 13.5523 0.499999 13 0.499999L4 0.5C3.44772 0.499999 3 0.947715 3 1.5C3 2.05228 3.44772 2.5 4 2.5L12 2.5L12 10.5C12 11.0523 12.4477 11.5 13 11.5C13.5523 11.5 14 11.0523 14 10.5L14 1.5ZM1.70711 14.2071L13.7071 2.20711L12.2929 0.792893L0.292893 12.7929L1.70711 14.2071Z" fill="white"/>
                         </svg>
-                    </a>
-                </div>
+                    </h3>
+                </a>
             </div>
         </section>
-        <div>
-            <center> 
-                <section class="location-content" id="location-sec">
-                    <h1 class="location-text">Location 🗺</h1>
-                    <section class="location-section"> 
-                        <div>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.7327241047624!2d79.96806121540027!3d12.988939290844517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a528cd0cfb6e7ab%3A0x3294da3faad96a9!2sSri%20Venkateswara%20College%20of%20Engineering%20(SVCE)!5e0!3m2!1sen!2sin!4v1678382551051!5m2!1sen!2sin" allowfullscreen="" class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class="location-address">
-                            <h1>Sri Venkateswara College Of Engineering</h1>
-                            <p>Post Bag No.1,Pennalur Village Chennai - Bangaluru<br>High Road Sriperumbudur Tk, Tamil Nadu 602117</p>
-                        </div>
-                    </section>
-                </section>
-                <a href="https://www.svce.ac.in/facilities/transport/bus-route-informations/"><button class="busbtn">Bus Route<img style="padding-left: 0.7rem;" src="./Logos/Arrow.svg" alt="" width="15"></button></a>
-            </center>
-        </div>
-        <footer>
-            <div class="foot-div">
-                <section class="text-social-section">
-                    <section>
-                        <img src="./Logos/SVCE logo B_W.png" alt="" class="footer-svce-logo" width="332px" style="padding-top: 1rem;"><br>
-                        <p>A national level symposium by AIT</p>
-                    </section>
-                    <section class="social-media">
-                        <img class="facebook" src="./Logos/Facebook.svg" alt="">
-                        <img class="twitter" src="./Logos/Twitter.svg" alt="">
-                        <img class="insta" src="./Logos/Instagram.svg" alt="">
-                        <img class="linkedin" src="./Logos/LinkedIn.svg" alt="">
-                        <img class="youtube" src="./Logos/YouTube.svg" alt="">
-                    </section>
-                </section>
-    
-                <section class="foot-text">
-                    <section class="foot-link">
-                        <h1>Events</h1><br>
-                        <a href="Events/zathura.html">Zathura</a><br><br>
-                        <a href="Events/voidx.html">VoidX</a><br><br>
-                        <a href="Events/alien-choices.html">Alien&nbsp;Choice</a><br><br>
-                        <a href="Events/binary-star.html">Binary&nbsp;Star</a><br><br>
-                        <a href="Events/pitching-stone.html">Pitching&nbsp;Stone</a><br><br>
-                        <a href="Events/space-trade.html">Space&nbsp;Trade</a>
-                    </section>
-                    <section class="foot-link">
-                        <h1>About</h1><br>
-                        <a href="">SVCE</a><br><br>
-                        <a href="">INT&nbsp;Dept</a><br><br>
-                        <a href="">AIT</a><br><br>
-                        <a href="">Protocol&nbsp;24E</a><br>
-                    </section>
-                    <section class="foot-link">
-                        <h1>Contact&nbsp;us</h1><br>
-                        <a href=""><i class="fa fa-envelope-o"></i>&emsp;Mail</a><br><br>
-                        <a href=""><i class="fa fa-phone"></i>&emsp;Number</a><br><br>
-                        <a href=""><i class="fa fa-map-marker"></i>&emsp;Address</a><br>
-                    </section>
-                </section>
-            </div>
-            <center><p style="color: #9b9b9b8a; padding: 4rem 0 2rem 0; background-color: black;">Copyright © 2023 SVCE  All Rights Reserved</p></center>
-    
-        </footer>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>

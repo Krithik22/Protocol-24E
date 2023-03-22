@@ -4,82 +4,91 @@
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../nav-bar-style.css">
+    <link rel="stylesheet" href="event-style.css">
     <link rel="icon" href="../Logos/AIT logo B⁄W.png">
-    <title>Events - Pitching Stone</title>
+    <title>PROTOCOL</title>
 </head>
 <body>
-    <div style="display: flex; justify-content: right;">
+    <nav class="nav-mobile">
         <div class="menu" id="menu">
             <button class="cross-btn" onclick="closemenu();"><img src="../Logos/Cross.svg" alt=""></button>
-            <nav class="nav-mobile">
+            <div class="nav-mobile-links">
                 <br><br><br><br><br>
-                <a href="../index.html" class="nav-mobile-btn">Home</a><br><br><br>
-                <a href="../about-us.html" class="nav-mobile-btn">About</a><br><br><br>
-                <a href="../events.html" class="nav-mobile-active">Events</a><br><br><br>
-                <a href="../events.html#location-sec" class="nav-mobile-btn">Location</a><br><br><br>
+                <a href="../index.html#nav-to-home" class="nav-mobile-active">Home</a><br><br><br>
+                <a href="../index.html#nav-to-about-us" class="nav-mobile-btn">About</a><br><br><br>
+                <a href="../events.html" class="nav-mobile-btn">Events</a><br><br><br>
+                <a href="../index.html#nav-to-location" class="nav-mobile-btn">Location</a><br><br><br>
                 <a href="#" class="nav-mobile-btn">Contact</a><br><br><br>
-            </nav>
+            </div>
         </div>
+    </nav>
+    <div class="nav-mob">
+        <img src="../Logos/SVCE logo B_W.png" alt="">
+        <button class="ham-btn" onclick="openmenu();"><img src="../Logos/hamburger.svg" alt=""></button>
     </div>
-    <div class="main">
+    <div class="events-main">
         <nav class="nav-desk">
             <img src="../Logos/SVCE logo B_W.png" alt="" width="200px">
-            <section>
-                <a class="navlink" href="../index.html"><button class="navbtn">Home</button></a>
-                <a class="navlink" href="../about-us.html"><button class="navbtn">About</button></a>
-                <a class="navlink" href="../events.html"><button class="navbtn-cur">Events</button></a>
-                <a class="navlink" href="../events.html#location-sec"><button class="navbtn">Location</button></a>
-                <a class="navlink" href=""  style="margin-right: 4.5rem;"><button class="navbtn">Contact</button></a>
-            </section>
-                <button class="ham-btn" onclick="openmenu();"><img src="../Logos/hamburger.svg" alt=""></button>
+            <div>
+                <a class="navbtn" href="../index.html#nav-to-home">Home</a>
+                <a class="navbtn" href="../index.html#nav-to-about-us">About</a>
+                <a class="navbtn" href="../events.html">Events</a>
+                <a class="navbtn" href="../index.html#nav-to-location">Location</a>
+                <a class="navbtn" href="">Contact</a>  <!--  style="margin-right: 4.5rem;"-->
+            </div>
         </nav>
-        <section class="event-details">
-            <h1 class="event-head">Pitching Stone - A Paper Presentation</h1>
-            <div class="event">
-                <img src="../Images/events/event 5.png" alt="" class="event-img">
+        <section class="event-page">
+            <div class="event-head">
+                <h1>
+                    Pitching Stone
+                    <svg width="37" height="43" viewBox="0 0 37 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.5722 4.35515C20.548 10.5262 12.6543 22.1707 5.2725 19.3804" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M11.0425 37.501C13.6953 32.5696 21.1059 23.5025 29.5257 26.6852" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M23.6401 4.17409C22.0938 10.3517 21.106 23.5027 29.5258 26.6853" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M11.0424 37.5011C12.1946 32.6236 12.6536 22.1708 5.2718 19.3805" stroke="#FBFBFB" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </h1>
+            </div>
+            <div class="event-details">
+                <img src="../Images/events/event 5.png" alt="">
                 <div class="event-desc">
-                    <h1>Description:</h1>
-                    <p>    
+                    <h2>Description</h2>
+                    <p>
                         This is a single round event. The participants need to submit their ppt two days before the start of the event.
                         The idea will be reviewed and those who qualify for the next round have to present their ppt on the event day.
                         The best presentation with best idea will be announced as winners.
                     </p>
-                    <br>
                     <h2>Rules</h2>
-                    <ol>
-                    <li>Team size: minimum of 1 member and maximum of 3 members.
-                    </li>
-                    <li>The domains can be of your choice.
-                    </li>
-                    <li>Kindly bring your PowerPoint presentation on a pen-drive and have a copy in your mail.
-                    </li>
-                    <li>The teams will get 10 minutes for presentation and followed by question-and-answer session.
-                    </li>
-                    <li>Persons from different institutions can be a part of the same team. However, one person may not be a part of multiple teams for the same event.
-                    </li>
-                    <li>The ppt needs to be submitted 2 days before the event through google forms attached below.
-                    </li>
-                    <li>Only the selected team needs to present their presentation on the day of the event. 
-                    </li>
-                    <li>The decision of judges will be final and no arguments or appeal will be entertained.
-                    </li>
-                    </ol>
+                    <ul>
+                        <li>Team size: minimum of 1 member and maximum of 3 members.
+                        </li>
+                        <li>The domains can be of your choice.
+                        </li>
+                        <li>Kindly bring your PowerPoint presentation on a pen-drive and have a copy in your mail.
+                        </li>
+                        <li>The teams will get 10 minutes for presentation and followed by question-and-answer session.
+                        </li>
+                        <li>Persons from different institutions can be a part of the same team. However, one person may not be a part of multiple teams for the same event.
+                        </li>
+                        <li>The ppt needs to be submitted 2 days before the event through google forms attached below.
+                        </li>
+                        <li>Only the selected team needs to present their presentation on the day of the event. 
+                        </li>
+                        <li>The decision of judges will be final and no arguments or appeal will be entertained.
+                        </li>
+                    </ul>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0P_A_uafU8sDsYgkK5GF9L-DsOY5DZnaQdCntLc0wVhRGJQ/viewform" style="text-decoration: none; text-align: center">
+                        <button class="register-btn">
+                            Register
+                            <svg width="15" height="15" viewBox="0 0 53 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.20274 47.4922C-0.154764 48.8683 -0.13968 51.0844 1.23643 52.4419C2.61253 53.7993 4.82856 53.7843 6.18606 52.4082L1.20274 47.4922ZM52.0804 4.42508C52.0673 2.49214 50.4896 0.935837 48.5567 0.948991L17.0574 1.1634C15.1245 1.17656 13.5682 2.75419 13.5813 4.68714C13.5945 6.62009 15.1721 8.17639 17.1051 8.16323L45.1044 7.97264L45.295 35.9719C45.3082 37.9049 46.8858 39.4612 48.8187 39.448C50.7517 39.4349 52.308 37.8572 52.2948 35.9243L52.0804 4.42508ZM6.18606 52.4082L51.0722 6.90687L46.0888 1.99094L1.20274 47.4922L6.18606 52.4082Z" fill="black"/>
+                            </svg>
+                        </button>
+                    </a>
                 </div>
             </div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSd0P_A_uafU8sDsYgkK5GF9L-DsOY5DZnaQdCntLc0wVhRGJQ/viewform" style="text-decoration: none; text-align: center">
-                <button class="register-btn">
-                    Register
-                    <img
-                      src="../Logos/Arrow.svg"
-                      alt=""
-                      width="15"
-                      style="position: relative; top: 4px; left: 5px"
-                    />
-                </button>
-            </a>
         </section>
-    </div>
     <script src="../script.js"></script>
 </body>
 </html>
