@@ -125,7 +125,10 @@ button{
     width: 325px;
 }
 .home-section{
-    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     margin-top: 150px;
     min-height: 100vh;
 }
