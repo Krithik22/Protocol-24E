@@ -1,0 +1,517 @@
+@font-face {
+    font-family: Mars;
+    src: url(./Fonts/Mars.ttf);
+}
+
+@font-face {
+    font-family: 'Mars Bold';
+    src: url(./Fonts/Mars\ Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Mars Thin';
+    src: url(./Fonts/Mars\ Thin.ttf);
+}
+
+@keyframes component {
+    0%   {top:0px;}
+    50% {margin-top: 26px}
+    100%   {top:0px;}
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0)), url(images/Star\ BG\ in\ UI.png), url(images/Main\ BG.png), url(images/Nebula\ GIF.gif); */
+    background: url(./Images/Star\ BG\ in\ UI.png), url(./Images/Star\ BG\ in\ UI.png), url(./Images/Star\ BG\ in\ UI.png),url(./Images/Main\ BG.png) ,url(./Images/Main\ BG.png), url(./Images/Main\ BG.png), url(./Images/flare.png),url(./Images/Nebula\ GIF.gif), radial-gradient(rgba(0, 0, 0, 0.199),rgba(0, 0, 0, 0.226));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+    height:100vh;
+    color: white;
+}
+
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+}
+
+*{
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* Nav Bar CSS */
+.ham-btn{
+    background: transparent;
+    border: transparent;
+}
+
+.cross-btn{
+    background: transparent;
+    border: transparent;
+    float: right;
+    margin-top: 25px;
+    margin-right: 15px;
+}
+
+.menu{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s ease-out;
+    background-color: black;
+    width: 70%;
+    position:absolute;
+    height: 100%;
+    z-index: 1;
+}
+
+.nav-mob{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 30px;
+}
+.nav-mob > img{
+    height: 28px;
+    width: 150px;
+}
+
+.nav-mobile{
+    display: flex; 
+    justify-content: right;
+}
+
+.nav-mobile-links{
+    margin-left: 1rem;
+    /* float: right; */
+}
+
+.nav-mobile-btn{
+    font-size: large;
+    color: rgba(255, 255, 255, 0.521);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.nav-mobile-active{
+    font-size: large;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.nav-desk{
+    display: none;
+}
+
+/* nav bar css */
+/* home section css */
+#protocol-img{
+    height: 40px; 
+    width: 325px;
+}
+.home-section{
+    text-align: center;
+    margin-top: 150px;
+    min-height: 100vh;
+}
+
+.home-section > p{
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 6px;
+    text-align: center;
+    letter-spacing: 0.425em;
+    text-transform: uppercase;
+    color: #C1C1C1;
+}
+
+.mainbtn-section {
+    margin-top: 48px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mainbtn1{
+    border-radius: 2.97px;
+    border: white solid 1px;
+    padding: 12px 12px;
+    margin-right: 16px;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight: bolder;
+    display: flex;
+}
+
+.mainbtn2{
+    background-color: #131313;
+    border: rgba(255, 255, 255, 0.603) solid 1px;
+    border-radius: 2.97px;
+    padding: 12px 24px;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight: bolder;
+}
+
+.component-border{
+    border: white solid 2px;
+    width: fit-content;
+    border-radius: 50px;
+    height: 3rem;
+    margin-top: 125px;
+}
+
+.component{
+    margin: 5px;
+    background: white;
+    width: 17px;
+    height: 17px;
+    content: " ";
+    border-radius: 60%;
+    animation-name: component;
+    animation-duration:2s ;
+    animation-iteration-count: infinite;
+}
+/* home section css */
+
+/* about-us css */
+.about-us-section{
+    min-height: 100vh;
+}
+
+.about-us-head{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.about-us-head h1{
+    font-family: 'Amatic SC', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 71px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* .about-us-img-sec{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} */
+.blob{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about-us-ait{
+    position: relative;
+    height: 250px;
+    top: 1em;
+    left: 55%;
+    transform: translateX(-50%);
+}
+
+.about-us-points{
+    font-family: 'Dm Sans';
+    list-style: disc;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: justify;
+    margin: 34px;
+}
+.meet-team-btn{
+    border-radius: 2.97px;
+    border: white solid 1px;
+    color: black;
+    padding: 12px 20px 12px 20px;
+    font-family:'Space Grotesk', sans-serif;
+    font-weight: bolder;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+/* about-us css */
+
+/* location-section css */
+
+.location-section{
+    min-height: max-content;
+    background: #121212;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.location{
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.map{
+    border:0;
+    border-radius:10px;
+    width: 300px; 
+    height: 284px;
+}
+
+.location-address{
+    width: 300px;
+    text-align: left;
+}
+
+.location-address h1{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.08em;
+    margin-bottom: 20px;
+}
+.location-address p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: #9B9B9B;
+    margin-bottom: 25px;
+}
+
+.location-text{
+    font-family: 'Amatic SC', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 71px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.busbtn{
+    border-radius: 2.97px;
+    border: white solid 1px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family:'Space Grotesk';
+    padding: 12px 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 16px;
+}
+
+
+/* location-section css */
+
+/* footer css */
+
+
+footer{
+    background-color: black;
+    /* background-color: blue; */
+    font-family: 'DM Sans' , sans-serif;
+}
+
+.text-social-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.footer-svce-logo{
+    height: 32px;
+    width: 170px;
+}
+.text-social-section p{
+    font-size: 12px;
+}
+
+.social-media img{
+    margin-left: 7px;
+}
+
+.foot-text{
+    display: flex;
+    justify-content:start;
+    padding: 10px 16px;
+}
+.foot-link{
+    font-family: 'DM Sans';
+    font-style: normal;
+}
+.foot-link h1{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.foot-link p{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #9B9B9B;
+}
+/* footer css */
+
+
+@media only screen and (min-width: 880px){
+    /* nav bar css */
+    .nav-desk{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 60px 0;
+    }
+    .menu{
+        display: none;
+    }
+    .nav-mob{
+        display: none;
+    }
+    .navbtn{
+        font-family: 'Space Grotesk', sans-serif;
+        background-color: transparent;
+        border: transparent;
+        color: #9B9B9B;
+        font-size: 20px;
+        line-height: 26px;
+        padding: 0 18px;
+    }
+    .navbtn:hover{
+        color: white;
+    }
+    /* nav bar css */
+    /* home section css */
+    #protocol-img{
+        width: 700px;
+        height: 48px;
+    }
+    .home-section > p{
+        font-size: 16px;
+        margin-top: 16px;
+        line-height: 20px;
+        letter-spacing: 0.725em;
+    }
+    .mainbtn-section{
+        flex-direction: row;
+    }
+    .mainbtn1{
+        padding: 12px 16px;
+        margin-right: 22px;
+    }
+    .mainbtn2{
+        padding: 12px 32px;
+    }
+    /* home section css */
+    /* about-us section css */
+
+    .about-us{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 100px 30px 200px;
+    }
+    .about-us-head h1{
+        font-size: 72px;
+        line-height: 91px;
+        letter-spacing: 0.08em;
+    }
+    .blob{
+        height: 334px;
+        width: 334px;
+        left: unset;
+        transform: translateX(0);
+    }
+    #about-us-ait{
+        height: 275px;
+        top: 3em;
+    }
+    .about-us-points{
+        font-size: 16px;
+        margin-left: 128px;
+        width: 655px;
+    }
+    /* about-us section css */
+    /* location-section css */
+    .location{
+        flex-direction: row;
+    }
+    .map{
+        height: 400px;
+        width: 400px;
+    }
+    .location-address{
+        width: 480px;
+        margin-left: 72px;
+    }
+    /* location-section css */
+}
+
+@media only screen and (min-width: 700px){
+
+    /* location-section css */
+    .location{
+        flex-direction: row;
+    }
+    .location-address{
+        width: 480px;
+        margin-left: 72px;
+    }
+    /* location-section css */
+    /* footer css */
+    .text-social-section{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .foot-div{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 16px;
+    }
+    .social-media img{
+        margin: 10px 7px 10px 0;
+    }
+    .foot-link{
+        padding-left: 40px;
+    }
+    .foot-link h1{
+        font-size: 20px;
+    }
+    .foot-link p{
+        font-size: 18px;
+    }
+    /* footer css */
+}
